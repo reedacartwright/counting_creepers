@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.creeper": {
+      "arrays": {
+        "textures": {
+          "array.skins": [
+            "texture.default",
+            "texture.surface"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "array.skins[query.property('rufusatticus:is_surface')]" ],
+      "overlay_color": {
+          "r": "((variable.flash == 0.0) || (query.swelling_dir < 0.0)) ? this : 1.0",
+          "g": "((variable.flash == 0.0) || (query.swelling_dir < 0.0)) ? this : 1.0",
+          "b": "((variable.flash == 0.0) || (query.swelling_dir < 0.0)) ? this : 1.0",
+          "a": "((variable.flash == 0.0) || (query.swelling_dir < 0.0)) ? this : 1.0"
+      }
+    }
+  }
+}

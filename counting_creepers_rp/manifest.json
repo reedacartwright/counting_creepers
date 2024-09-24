@@ -1,0 +1,24 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Measure creepers for the analysis of bedrock farms",
+    "name": "Counting Creepers (RP)",
+    "uuid":"a336cf73-732f-4da8-84a9-4662549c3b47",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "description": "Counting Creepers Resource Pack",
+      "type": "resources",
+      "uuid": "e6059fb8-3a46-4071-9156-13e12a3f42c5",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "44f04d32-ba6f-4676-9680-2b71a5866098",
+      "version": [1, 0, 0]
+    }
+  ]
+}
