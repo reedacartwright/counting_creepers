@@ -1,5 +1,5 @@
 # update number of ticks
-scoreboard players add timer cc_global 1
+execute if score cc_state cc_global matches 2.. run scoreboard players add timer cc_global 1
 
 # count mobs
 scoreboard players set surface_creepers cc_global 0
@@ -33,3 +33,12 @@ scoreboard players operation OtherMonsterCur cc_results = other_mobs cc_global
 scoreboard players operation SurfCreeperTot cc_results = tot_surface_creepers cc_global
 scoreboard players operation CaveCreeperTot cc_results = tot_cave_creepers cc_global
 scoreboard players operation OtherMonsterTot cc_results = tot_other_mobs cc_global
+scoreboard players operation CreeperTot cc_results = tot_cave_creepers cc_global
+scoreboard players operation CreeperTot cc_results += tot_surface_creepers cc_global
+
+# Update Estimate
+scoreboard players operation CreepersPerHour cc_results = CreeperTot cc_results
+scoreboard players operation CreepersPerHour cc_results *= k_60 cc_global
+scoreboard players operation CreepersPerHour cc_results /= TimerMinutes cc_results
+
+

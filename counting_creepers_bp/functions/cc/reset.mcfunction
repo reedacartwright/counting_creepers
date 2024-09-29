@@ -13,6 +13,10 @@ scoreboard players set cc_state cc_global 0
 
 # Setup Constants
 scoreboard players set k_1200 cc_global 1200
+scoreboard players set k_60 cc_global 60
+scoreboard players set k_100 cc_global 100
+scoreboard players set k_720 cc_global 720
+scoreboard players set k_72000 cc_global 72000
 
 # Setup Stats
 scoreboard players set timer cc_global 0
